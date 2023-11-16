@@ -1,0 +1,169 @@
+:root {
+  /* Colors */
+  --clr-primary-900: hsl(233, 47%, 7%); /* main background*/
+  --clr-primary-700: hsl(244, 38%, 16%); /* card background*/
+  --clr-primary-400: rgb(170, 92, 219); /* accent */
+  --clr-primary-500: rgb(88, 13, 134);
+  --clr-neutral-100: hsl(0, 0%, 100%); /* main heading, stats*/
+  --clr-neutral-400: hsla(0, 0%, 100%, 0.75); /* main p*/
+  --clr-neutral-500: hsla(0, 0%, 100%, 0.6); /* stat heading*/
+  /* Font sizes */
+  --fs-400: 0.9375rem; /*body*/
+  /* Font family */
+
+  --ff-inter: "Inter", sans-serif;
+  --ff-lexend: "Lexend Deca", sans-serif;
+
+  /* Font weights */
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utilities */
+.flow-content > * + * {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+.split {
+  display: flex;
+}
+
+/* .text-primary-400 {
+  color: var(--clr-primary-400);
+} */
+
+/* styling */
+
+/* body {
+ 
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+
+  background-color: var(--clr-primary-900);
+  color: var(--clr-neutral-400);
+  font-family: var(--ff-inter);
+  font-size: var(--fs-400);
+  padding: 1.5rem;
+}
+
+h2,
+h3 {
+  color: var(--clr-neutral-100);
+}
+
+.card {
+  background-color: var(--clr-primary-700);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.image {
+  position: relative;
+}
+
+.image::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: var(--clr-primary-500);
+  opacity: 0.6;
+  z-index: 10;
+}
+
+.card-title {
+  font-size: 1.75rem;
+} */
+
+body {
+  font-family: var(--ff-inter);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+  color: var(--clr-neutral-400);
+  background-color: var(--clr-primary-900);
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: var(--clr-neutral-100);
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--clr-neutral-100);
+}
+
+main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+/* utility */
+
+.padding-24 {
+  padding: 1.5rem;
+}
+
+.padding-block-40 {
+  padding-block: 2.5rem;
+}
+
+.padding-inline-32 {
+  padding-inline: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary-400 {
+  color: var(--clr-primary-400);
+}
+
+.background-primary-700 {
+  background-color: var(--clr-primary-700);
+}
+
+/* composition */
+
+.flow > * + * {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+.card-info {
+  --flow-spacer: 1.75em;
+}
